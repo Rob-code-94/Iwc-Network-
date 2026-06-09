@@ -4,8 +4,6 @@ import { businessInfo } from '../../constants/businessInfo';
 
 const RegulatoryDisclosures: React.FC = () => {
   const links = [
-    { label: 'TMHP Medical Transportation Program (Ch. 2.14)', href: businessInfo.regulatoryLinks.tmhpMedTransport },
-    { label: 'TMHP Provider Enrollment (PEMS)', href: businessInfo.regulatoryLinks.tmhpPems },
     { label: 'HHSC Form 4214 — Long-Distance NEMT', href: businessInfo.regulatoryLinks.hhscForm4214 },
     { label: 'HHSC NEMT Handbook', href: businessInfo.regulatoryLinks.hhscNemtHandbook },
     { label: 'City of Dallas Ch. 47A — Transportation for Hire', href: businessInfo.regulatoryLinks.dallasChapter47A },
@@ -57,8 +55,8 @@ const RegulatoryDisclosures: React.FC = () => {
             ))}
           </ul>
           <p className="mt-6 text-xs text-slate-500">
-            Information on this site is for general reference only and does not constitute legal advice. Verify enrollment
-            and billing status with TMHP before relying on Medicaid coverage.
+            Information on this site is for general reference only and does not constitute legal advice. Verify Medicaid
+            coverage and trip authorization with your managed care organization before scheduling.
           </p>
         </div>
       </div>

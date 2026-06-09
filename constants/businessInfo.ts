@@ -30,8 +30,6 @@ export const businessInfo = {
   },
 
   regulatoryLinks: {
-    tmhpMedTransport: 'https://www.tmhp.com/sites/default/files/file-library/resources/provider-manuals/tmppm/pdf-chapters/2025/2025-07-july/2_14_med_transport_program.pdf',
-    tmhpPems: 'https://www.tmhp.com/topics/provider-enrollment/pems/start-application',
     hhscForm4214: 'https://www.hhs.texas.gov/regulations/forms/4000-4999/form-4214-request-non-emergency-medical-transportation-nemt-services',
     hhscNemtHandbook: 'https://www.hhs.texas.gov/sites/default/files/documents/laws-regulations/handbooks/mepd/archive/16-4/16-4.pdf',
     dallasChapter47A: 'https://dallascityhall.com/departments/codecompliance/DCH%20documents/CHAPTER%2047A%20TRANSPORTATION%20FOR%20HIRE.html',
