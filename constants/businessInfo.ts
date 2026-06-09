@@ -1,7 +1,6 @@
 /** Central source for IWC Network business details — update with verified license/NPI numbers. */
 export const businessInfo = {
   legalName: 'The IWC Network LLC',
-  dba: 'IWC Network',
   tagline: 'Independent Wellness Courier Network — Two services, one trusted partner',
 
   address: {
@@ -13,18 +12,12 @@ export const businessInfo = {
   },
 
   dispatch: {
-    phone: '(214) 555-0199',
+    phone: '(469) 816-3035',
     email: 'dispatch@iwcnetwork.com',
     hours: '24/7 Dispatch',
   },
 
   nemt: {
-    grievanceOfficer: 'NEMT Compliance Officer',
-    grievanceEmail: 'compliance@iwcnetwork.com',
-    grievancePhone: '(214) 555-0199',
-    grievanceResponseDays: 5,
-    npi: 'Pending TMHP enrollment',
-    dallasTfhAuthority: 'Pending City of Dallas Ch. 47A operating authority',
     serviceArea: [
       'Dallas County',
       'Tarrant County',

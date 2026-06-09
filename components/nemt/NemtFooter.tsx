@@ -34,11 +34,10 @@ const NemtFooter: React.FC = () => {
             </ul>
           </div>
           <div>
-            <h4 className="text-white font-semibold mb-4">Grievances</h4>
+            <h4 className="text-white font-semibold mb-4">Contact</h4>
             <p className="text-sm text-slate-400">
-              {businessInfo.nemt.grievanceOfficer}<br />
-              {businessInfo.nemt.grievanceEmail}<br />
-              {businessInfo.nemt.grievancePhone}
+              {businessInfo.dispatch.phone}<br />
+              {businessInfo.dispatch.email}
             </p>
           </div>
         </div>

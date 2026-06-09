@@ -24,10 +24,8 @@ const RegulatoryDisclosures: React.FC = () => {
             <h4 className="text-lg font-bold text-slate-900 mb-4">Provider Information</h4>
             <dl className="space-y-3 text-sm text-slate-600">
               <div><dt className="font-semibold text-slate-900">Legal Entity</dt><dd>{businessInfo.legalName}</dd></div>
-              <div><dt className="font-semibold text-slate-900">DBA</dt><dd>{businessInfo.dba} NEMT</dd></div>
               <div><dt className="font-semibold text-slate-900">Service Area</dt><dd>{businessInfo.nemt.serviceArea.join(', ')}</dd></div>
-              <div><dt className="font-semibold text-slate-900">NPI / API</dt><dd>{businessInfo.nemt.npi}</dd></div>
-              <div><dt className="font-semibold text-slate-900">Dallas TFH Authority</dt><dd>{businessInfo.nemt.dallasTfhAuthority}</dd></div>
+              <div><dt className="font-semibold text-slate-900">Dispatch</dt><dd>{businessInfo.dispatch.phone}</dd></div>
             </dl>
           </div>
 
@@ -37,7 +35,6 @@ const RegulatoryDisclosures: React.FC = () => {
               <li><strong className="text-slate-900">HIPAA:</strong> Member health information is protected per federal privacy regulations.</li>
               <li><strong className="text-slate-900">ADA:</strong> We provide reasonable accommodations and accessible vehicles upon request.</li>
               <li><strong className="text-slate-900">Non-Discrimination:</strong> No person is excluded from participation or denied benefits on grounds of race, color, national origin, sex, age, or disability.</li>
-              <li><strong className="text-slate-900">Grievances:</strong> Contact {businessInfo.nemt.grievanceOfficer} at {businessInfo.nemt.grievanceEmail} or {businessInfo.nemt.grievancePhone}. We respond within {businessInfo.nemt.grievanceResponseDays} business days.</li>
             </ul>
           </div>
         </div>

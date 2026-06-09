@@ -41,7 +41,7 @@ const ContactForm: React.FC = () => {
                   <p><strong>Email:</strong><br />{businessInfo.dispatch.email}</p>
                 </div>
               </div>
-              <div className="mt-8 text-xs text-brand-200 opacity-60">{businessInfo.dba} © {new Date().getFullYear()}</div>
+              <div className="mt-8 text-xs text-brand-200 opacity-60">IWC Network © {new Date().getFullYear()}</div>
             </div>
 
             <div className="md:col-span-3 p-10">

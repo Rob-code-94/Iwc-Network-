@@ -37,9 +37,7 @@ const standards = [
     icon: ClipboardCheck,
     title: 'Operational Compliance',
     items: [
-      'TMHP Medicaid enrollment in progress (NPI on file upon approval)',
-      'Monthly driver credential re-verification',
-      'Documented grievance process with defined response timelines',
+      'Documented complaint process with defined response timelines',
       'ADA and non-discrimination policy adherence',
     ],
   },

@@ -64,7 +64,7 @@ const GatewayPage: React.FC = () => {
       </main>
 
       <footer className="py-6 text-center text-sm text-slate-500">
-        © {new Date().getFullYear()} {businessInfo.dba}. All rights reserved.
+        © {new Date().getFullYear()} IWC Network. All rights reserved.
       </footer>
     </div>
   );
