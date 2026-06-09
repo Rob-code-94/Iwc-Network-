@@ -32,3 +32,19 @@ export interface ContactFormState {
   company: string;
   message: string;
 }
+
+export type MobilityLevel = 'ambulatory' | 'wheelchair' | 'stretcher';
+
+export interface NemtIntakeFormState {
+  name: string;
+  phone: string;
+  email: string;
+  medicaidId: string;
+  mcoName: string;
+  mobilityLevel: MobilityLevel;
+  pickupAddress: string;
+  destination: string;
+  appointmentDate: string;
+  appointmentTime: string;
+  specialNeeds: string;
+}

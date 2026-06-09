@@ -1,25 +1,18 @@
 import React from 'react';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import Features from './components/Features';
-import ContactForm from './components/ContactForm';
-import Footer from './components/Footer';
-import AIChat from './components/AIChat';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import GatewayPage from './pages/GatewayPage';
+import CourierPage from './pages/CourierPage';
+import NemtPage from './pages/NemtPage';
 
 function App() {
   return (
-    <div className="min-h-screen bg-slate-50 scroll-smooth">
-      <Header />
-      <main>
-        <Hero />
-        <Services />
-        <Features />
-        <ContactForm />
-      </main>
-      <Footer />
-      <AIChat />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<GatewayPage />} />
+        <Route path="/courier/*" element={<CourierPage />} />
+        <Route path="/nemt/*" element={<NemtPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
