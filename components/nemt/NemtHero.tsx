@@ -39,7 +39,7 @@ const NemtHero: React.FC = () => {
           <div className="flex flex-col sm:flex-row gap-4">
             <a
               href="#contact"
-              className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-slate-900 bg-brand-400 rounded-lg hover:bg-brand-300 transition-all shadow-[0_0_20px_rgba(56,189,248,0.3)]"
+              className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-slate-900 bg-white rounded-lg hover:bg-slate-100 transition-all shadow-lg shadow-black/25 hover:shadow-xl"
             >
               Schedule a Ride
               <ArrowRight className="ml-2 h-5 w-5" />

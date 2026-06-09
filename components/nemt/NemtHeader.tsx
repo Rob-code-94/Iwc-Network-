@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { Menu, X, Accessibility, Phone } from 'lucide-react';
+import { Menu, X, HeartPulse, Phone } from 'lucide-react';
 import BusinessLineSwitcher from '../shared/BusinessLineSwitcher';
 
 const NemtHeader: React.FC = () => {
@@ -31,7 +31,7 @@ const NemtHeader: React.FC = () => {
         <div className="flex justify-between items-center gap-4">
           <Link to="/" className="flex items-center space-x-2 shrink-0">
             <div className={`p-2 rounded-lg ${isScrolled ? 'bg-brand-600 text-white' : 'bg-white text-brand-600'}`}>
-              <Accessibility className="h-6 w-6" />
+              <HeartPulse className="h-6 w-6" />
             </div>
             <span className={`text-xl font-bold tracking-tight ${isScrolled ? 'text-slate-900' : 'text-white'}`}>
               IWC NEMT
