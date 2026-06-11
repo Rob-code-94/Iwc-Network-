@@ -1,0 +1,54 @@
+{
+  "project": "iwc-network-web",
+  "domain": "theiwcnetwork.com",
+  "firebaseConsole": "https://console.firebase.google.com/project/iwc-network-web/hosting/sites/iwc-network-web/domains",
+  "note": "Your Squarespace domain is theiwcnetwork.com (with 'i'). Firebase was also given thewcnetwork.com by mistake — ignore that unless you own it separately.",
+  "squarespacePresetGuidance": {
+    "deleteEntirePreset": [
+      {
+        "preset": "Squarespace Defaults",
+        "why": "These point @ and www to Squarespace hosting — must go for Firebase web hosting."
+      }
+    ],
+    "keepEntirePreset": [
+      {
+        "preset": "Google Workspace",
+        "why": "MX records for Rob@theiwcnetwork.com email — do not delete."
+      }
+    ],
+    "optionalKeep": [
+      {
+        "preset": "Squarespace Domain Connect",
+        "why": "Only needed if you use Squarespace domain-connect features; safe to delete if unused."
+      },
+      {
+        "preset": "Domain Connect to Entri (Mailchimp DKIM)",
+        "why": "Keep if you send email via Mailchimp; delete if you don't use Mailchimp."
+      }
+    ],
+    "keepCustomRecords": [
+      "All Google Workspace MX records (if not in preset block)",
+      "brevo1/brevo2._domainkey CNAMEs (Brevo email)",
+      "brevo-code TXT @",
+      "_dmarc TXT",
+      "google-site-verification TXT @"
+    ]
+  },
+  "webHostingChanges": {
+    "apex": {
+      "remove": [{ "host": "@", "type": "A", "value": "198.49.23.144" }],
+      "add": [
+        { "host": "@", "type": "A", "value": "199.36.158.100" },
+        { "host": "@", "type": "TXT", "value": "hosting-site=iwc-network-web" }
+      ],
+      "doNotRemove": [
+        { "host": "@", "type": "TXT", "note": "brevo-code, google-site-verification — keep both" }
+      ]
+    },
+    "www": {
+      "remove": [{ "host": "www", "type": "CNAME", "value": "ext-sq.squarespace.com" }],
+      "add": [{ "host": "www", "type": "CNAME", "value": "iwc-network-web.web.app" }]
+    }
+  },
+  "presetWarning": "Squarespace warns 'this will replace the preset' when you edit records inside a preset group. That is expected. Delete the Squarespace Defaults preset (trash icon), then add Firebase records under Custom records. Email presets (Google Workspace) stay untouched."
+}
